@@ -1,0 +1,1 @@
+Las pruebas de codigo de cada segmento estan separados por carpeta, en la clase principal se crea un objeto de cada clase para ser mas accesible al ejecutar algun segmento en especial, basta con descomentar algun objeto creado y funcion llamada
