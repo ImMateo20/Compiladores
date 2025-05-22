@@ -2,7 +2,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,15 +16,18 @@ header {
 
 #main-principal {
     width: 95%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     gap: 10px;
-    height: 85vh;
+    min-height: 85vh;
+    height: auto;
     margin: 5px;
 }
 
 #contenedor-textarea,
-#contenedor-resultados {
+#contenedor-resultados,
+#contenedor-semantica {
     border-radius: 10px;
     padding: 5px;
     text-align: center;
@@ -32,6 +35,24 @@ header {
     background-color: rgb(129, 152, 173);
     height: auto;
     min-height: max-content;
+}
+
+#contenedor-textarea,
+#contenedor-resultados {
+    grid-row: 1;
+}
+
+#contenedor-semantica {
+    height: auto;
+    grid-row: 2;
+    grid-column: 1/span 2;
+}
+
+#contenedor-tabla-semantica-e,
+#contenedor-tabla-semantica-r {
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 #contenedor-textarea {
@@ -44,7 +65,7 @@ header {
 #contenedor-textarea textarea {
     font-size: x-large;
     width: 90%;
-    height: 90%;
+    height: 500px;
     border-radius: 10px;
     /* height: 300px; */
 }
@@ -70,7 +91,8 @@ header {
     font-weight: bold;
 }
 
-.div-tokens table {
+.div-tokens table,
+#contenedor-semantica table {
     border-collapse: collapse;
     width: 90%;
     height: 100%;
@@ -122,6 +144,7 @@ th {
 td {
     background-color: rgb(255, 255, 255);
     color: #000000;
+    white-space: pre-line;
 }
 
 

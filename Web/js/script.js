@@ -18,7 +18,7 @@ botonTokenizar.addEventListener("click", async () => {
     formData.append("indice", indicePagina);
 
     const response = await realizarPeticionPOST(
-      "http://localhost:8080/listar-tokens",
+      "http://localhost:8080/compilador/listar-tokens",
       formData
     );
 
@@ -89,7 +89,7 @@ async function funcionBoton() {
   formData.append("indice", indicePagina);
 
   const response = await realizarPeticionPOST(
-    "http://localhost:8080/listar-tokens",
+    "http://localhost:8080/compilador/listar-tokens",
     formData
   );
 
@@ -139,32 +139,128 @@ function crearTabla(tabla, pNumPag, tokens) {
 botonAST.addEventListener("click", async () => {
   const yaAgregado = contenedorResultados.getElementsByClassName("div-ast");
   if (yaAgregado.length == 0) {
+    console.log(textArea.value);
     const response = await realizarPeticionPOST(
-      "http://localhost:8080/recorridos",
+      "http://localhost:8080/compilador/recorridos",
       textArea.value
     );
 
-    const div = document.createElement("div");
-    div.className = "div-ast";
     let result = await response.json();
 
-    if (result.errores.length > 0) {
-      alert(result.errores.join("\n"));
-    }
+    generarParser(result);
 
-    const p = document.createElement("textarea");
-    p.innerHTML = result.compilador;
-    p.className = "form-control";
-    // .replaceAll("\n", "<br>")
-    // .replaceAll("\t", "&emsp;");
-    // .replaceAll("\t", "  ");
-    console.log(result);
-    p.readOnly = true;
-
-    div.appendChild(p);
-    contenedorResultados.appendChild(div);
+    generarSemantica(result);
   }
 });
+
+function generarParser(result) {
+  const div = document.createElement("div");
+  div.className = "div-ast";
+
+  if (result.errores.length > 0) {
+    alert(result.errores.join("\n"));
+  }
+
+  const p = document.createElement("textarea");
+  p.innerHTML = result.compilador;
+  p.className = "form-control";
+  // .replaceAll("\n", "<br>")
+  // .replaceAll("\t", "&emsp;");
+  // .replaceAll("\t", "  ");
+  console.log(result);
+  p.readOnly = true;
+
+  div.appendChild(p);
+  contenedorResultados.appendChild(div);
+}
+
+function generarSemantica(result) {
+  const errores = result.semantico.errores;
+  const mapa = result.semantico.mapa;
+
+  const divE = document.getElementById("contenedor-tabla-semantica-e");
+  const divM = document.getElementById("contenedor-tabla-semantica-r");
+
+  if (errores.length > 0) {
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const tbody = document.createElement("tbody");
+    const filaH = document.createElement("tr");
+    const celdaExpresion = document.createElement("th");
+    const celdaError = document.createElement("th");
+    celdaExpresion.textContent = "Expresion";
+    celdaError.textContent = "Error";
+    filaH.appendChild(celdaExpresion);
+    filaH.appendChild(celdaError);
+
+    errores.forEach((error) => {
+      const filaB = document.createElement("tr");
+      const celdaEX = document.createElement("td");
+      const celdaER = document.createElement("td");
+      celdaEX.textContent = error.expresion;
+      celdaER.textContent = error.error;
+      filaB.appendChild(celdaEX);
+      filaB.appendChild(celdaER);
+      tbody.appendChild(filaB);
+    });
+
+    thead.appendChild(filaH);
+    table.appendChild(thead);
+    table.appendChild(tbody);
+    divE.appendChild(table);
+  }
+
+  if (Object.keys(mapa).length > 0) {
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const tbody = document.createElement("tbody");
+    const filaH = document.createElement("tr");
+    const celdaTipo = document.createElement("th");
+    const celdaNombre = document.createElement("th");
+    const celdaValor = document.createElement("th");
+    const celdaErrores = document.createElement("th");
+    celdaTipo.textContent = "Tipo de dato";
+    celdaNombre.textContent = "Nombre de variable";
+    celdaValor.textContent = "Valor de la variable";
+    celdaErrores.textContent = "Errores en la asignacion";
+    for (const nombreVar in mapa) {
+      const filaB = document.createElement("tr");
+      const celdaT = document.createElement("td");
+      const celdaN = document.createElement("td");
+      const celdaV = document.createElement("td");
+      const celdaE = document.createElement("td");
+      celdaT.textContent = mapa[nombreVar].tipo;
+      celdaN.textContent = mapa[nombreVar].nombre;
+      celdaV.textContent =
+        mapa[nombreVar].valor !== null
+          ? mapa[nombreVar].valor
+          : "El valor no pudo ser asignado";
+      const errores = mapa[nombreVar].erroresSemanticos;
+      if (errores.length > 0) {
+        errores.forEach((error, i) => {
+          celdaE.textContent =
+            celdaE.textContent + (i + 1) + "." + error + "\n";
+        });
+      } else {
+        celdaE.textContent = "Sin errores semanticos";
+      }
+      filaB.appendChild(celdaT);
+      filaB.appendChild(celdaN);
+      filaB.appendChild(celdaV);
+      filaB.appendChild(celdaE);
+      tbody.appendChild(filaB);
+    }
+    filaH.appendChild(celdaTipo);
+    filaH.appendChild(celdaNombre);
+    filaH.appendChild(celdaValor);
+    filaH.appendChild(celdaErrores);
+    thead.appendChild(filaH);
+    table.appendChild(thead);
+    table.appendChild(tbody);
+
+    divM.appendChild(table);
+  }
+}
 
 //BLOQUE DE CODIGO PARA REALIZAR PETICIONES Y VALIDAR ERRORES
 
