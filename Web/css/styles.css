@@ -1,0 +1,228 @@
+:root {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    height: 10vh;
+}
+
+#main-principal {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    height: 85vh;
+    margin: 5px;
+}
+
+#contenedor-textarea,
+#contenedor-resultados {
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(129, 152, 173);
+    height: auto;
+    min-height: max-content;
+}
+
+#contenedor-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-textarea textarea {
+    font-size: x-large;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    /* height: 300px; */
+}
+
+#contenedor-token-ast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.div-tokens {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-tokens p {
+    color: black;
+    font-weight: bold;
+}
+
+.div-tokens table {
+    border-collapse: collapse;
+    width: 90%;
+    height: 100%;
+}
+
+.botones-tabla-tokens {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.div-ast {
+    text-align: center;
+    background-color: rgb(234, 234, 234);
+    width: 90%;
+    overflow: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.div-ast textarea {
+    width: 95%;
+    height: 215px;
+}
+
+#contenedor-botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+tr,
+td,
+th {
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    width: 90vh;
+    /* width: 100%; */
+}
+
+th {
+    background-color: rgb(5, 103, 195);
+    color: white;
+}
+
+td {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+
+@media screen and (max-height: 735px) and (min-width: 901px) {
+    #main-principal {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 85vh;
+        min-height: max-content;
+        gap: 10px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    #contenedor-textarea,
+    #contenedor-resultados {
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        width: 95%;
+        background-color: rgb(129, 152, 173);
+        min-height: fit-content;
+    }
+
+    #contenedor-textarea textarea {
+        font-size: large;
+    }
+
+    #contenedor-token-ast {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        height: 90%;
+        min-height: fit-content;
+    }
+
+    .div-tokens {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-ast textarea {
+        width: 95%;
+        height: 400px;
+    }
+
+    .div-tokens,
+    .div-ast {
+        min-height: fit-content;
+    }
+
+
+}
+
+@media screen and (max-height: 735px) and (max-width: 900px) {
+    #main-principal {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+        margin: 0;
+        height: auto;
+    }
+
+    #contenedor-textarea,
+    #contenedor-resultados {
+        border-radius: 10px;
+        padding: 20px 5px;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(129, 152, 173);
+    }
+
+    #contenedor-textarea textarea {
+        height: 200px;
+        font-size: large;
+    }
+
+    #contenedor-token-ast {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .div-tokens {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

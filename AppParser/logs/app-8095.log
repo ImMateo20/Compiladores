@@ -1,0 +1,41 @@
+2025-05-22T08:06:47.238-06:00  INFO 23904 --- [app-parser] [main] appParser.AppParserAplication            : Starting AppParserAplication using Java 22.0.2 with PID 23904 (C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppParser\target\classes started by HOLA in C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppParser)
+2025-05-22T08:06:47.244-06:00  INFO 23904 --- [app-parser] [main] appParser.AppParserAplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T08:06:48.819-06:00  INFO 23904 --- [app-parser] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bb3ecc8d-27d9-3341-97cc-d0feb13170da
+2025-05-22T08:06:48.934-06:00  WARN 23904 --- [app-parser] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-22T08:06:48.949-06:00  WARN 23904 --- [app-parser] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T08:06:49.424-06:00  INFO 23904 --- [app-parser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8095 (http)
+2025-05-22T08:06:49.450-06:00  INFO 23904 --- [app-parser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22T08:06:49.451-06:00  INFO 23904 --- [app-parser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-22T08:06:49.596-06:00  INFO 23904 --- [app-parser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22T08:06:49.597-06:00  INFO 23904 --- [app-parser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2252 ms
+2025-05-22T08:06:50.656-06:00  INFO 23904 --- [app-parser] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22T08:06:50.725-06:00  WARN 23904 --- [app-parser] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22T08:06:50.771-06:00  INFO 23904 --- [app-parser] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22T08:06:50.948-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22T08:06:50.958-06:00  INFO 23904 --- [app-parser] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:06:50.994-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T08:06:50.995-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T08:06:50.995-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T08:06:50.996-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T08:06:50.997-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T08:06:50.997-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22T08:06:50.997-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T08:06:51.656-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T08:06:51.662-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22T08:06:51.666-06:00  INFO 23904 --- [app-parser] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22T08:06:51.677-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747922811675 with initial instances count: 10
+2025-05-22T08:06:51.680-06:00  INFO 23904 --- [app-parser] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APP-PARSER with eureka with status UP
+2025-05-22T08:06:51.682-06:00  INFO 23904 --- [app-parser] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747922811682, current=UP, previous=STARTING]
+2025-05-22T08:06:51.685-06:00  INFO 23904 --- [app-parser] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-PARSER/LAPTOP-QD8DGEIF:app-parser:8095: registering service...
+2025-05-22T08:06:51.717-06:00  INFO 23904 --- [app-parser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8095 (http) with context path ''
+2025-05-22T08:06:51.719-06:00  INFO 23904 --- [app-parser] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8095
+2025-05-22T08:06:51.741-06:00  INFO 23904 --- [app-parser] [main] appParser.AppParserAplication            : Started AppParserAplication in 5.694 seconds (process running for 6.532)
+2025-05-22T08:06:51.763-06:00  INFO 23904 --- [app-parser] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-PARSER/LAPTOP-QD8DGEIF:app-parser:8095 - registration status: 204
+2025-05-22T08:11:51.016-06:00  INFO 23904 --- [app-parser] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:16:51.027-06:00  INFO 23904 --- [app-parser] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:21:51.030-06:00  INFO 23904 --- [app-parser] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:26:51.032-06:00  INFO 23904 --- [app-parser] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:27:55.593-06:00  INFO 23904 --- [app-parser] [http-nio-8095-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22T08:27:55.598-06:00  INFO 23904 --- [app-parser] [http-nio-8095-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22T08:27:55.606-06:00  INFO 23904 --- [app-parser] [http-nio-8095-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-22T08:31:51.034-06:00  INFO 23904 --- [app-parser] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

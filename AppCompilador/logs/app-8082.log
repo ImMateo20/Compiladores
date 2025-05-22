@@ -1,0 +1,136 @@
+2025-05-22T07:55:08.938-06:00  INFO 3312 --- [compilador] [main] appCompilador.AppCompiladorApplication   : Starting AppCompiladorApplication using Java 22.0.2 with PID 3312 (C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppCompilador\target\classes started by HOLA in C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppCompilador)
+2025-05-22T07:55:08.943-06:00  INFO 3312 --- [compilador] [main] appCompilador.AppCompiladorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T07:55:11.275-06:00  INFO 3312 --- [compilador] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3099c522-77fa-3343-bdbb-9ca7c59e9da6
+2025-05-22T07:55:11.488-06:00  WARN 3312 --- [compilador] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-22T07:55:11.492-06:00  WARN 3312 --- [compilador] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T07:55:12.098-06:00  INFO 3312 --- [compilador] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-22T07:55:12.127-06:00  INFO 3312 --- [compilador] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22T07:55:12.128-06:00  INFO 3312 --- [compilador] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-22T07:55:12.326-06:00  INFO 3312 --- [compilador] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22T07:55:12.328-06:00  INFO 3312 --- [compilador] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3273 ms
+2025-05-22T07:55:12.908-06:00  INFO 3312 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-parser' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T07:55:13.075-06:00  INFO 3312 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-lexer' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T07:55:13.131-06:00  INFO 3312 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-semantica' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T07:55:14.457-06:00  INFO 3312 --- [compilador] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22T07:55:14.565-06:00  WARN 3312 --- [compilador] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22T07:55:14.694-06:00  INFO 3312 --- [compilador] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22T07:55:15.062-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22T07:55:15.081-06:00  INFO 3312 --- [compilador] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T07:55:15.147-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T07:55:15.148-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T07:55:15.148-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T07:55:15.149-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T07:55:15.149-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T07:55:15.150-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22T07:55:15.151-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T07:55:16.278-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T07:55:16.286-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22T07:55:16.294-06:00  INFO 3312 --- [compilador] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22T07:55:16.310-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747922116308 with initial instances count: 0
+2025-05-22T07:55:16.314-06:00  INFO 3312 --- [compilador] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application COMPILADOR with eureka with status UP
+2025-05-22T07:55:16.317-06:00  INFO 3312 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747922116317, current=UP, previous=STARTING]
+2025-05-22T07:55:16.324-06:00  INFO 3312 --- [compilador] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPILADOR/LAPTOP-QD8DGEIF:compilador:8082: registering service...
+2025-05-22T07:55:16.371-06:00  INFO 3312 --- [compilador] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-05-22T07:55:16.374-06:00  INFO 3312 --- [compilador] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2025-05-22T07:55:16.402-06:00  INFO 3312 --- [compilador] [main] appCompilador.AppCompiladorApplication   : Started AppCompiladorApplication in 8.72 seconds (process running for 9.582)
+2025-05-22T07:55:16.432-06:00  INFO 3312 --- [compilador] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPILADOR/LAPTOP-QD8DGEIF:compilador:8082 - registration status: 204
+2025-05-22T07:55:46.287-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T07:55:46.288-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T07:55:46.289-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T07:55:46.289-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T07:55:46.289-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T07:55:46.290-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-05-22T07:55:46.290-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T07:55:46.347-06:00  INFO 3312 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T07:56:55.495-06:00  INFO 9848 --- [compilador] [main] appCompilador.AppCompiladorApplication   : Starting AppCompiladorApplication using Java 22.0.2 with PID 9848 (C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppCompilador\target\classes started by HOLA in C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppCompilador)
+2025-05-22T07:56:55.500-06:00  INFO 9848 --- [compilador] [main] appCompilador.AppCompiladorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T07:56:57.160-06:00  INFO 9848 --- [compilador] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3099c522-77fa-3343-bdbb-9ca7c59e9da6
+2025-05-22T07:56:57.346-06:00  WARN 9848 --- [compilador] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-22T07:56:57.351-06:00  WARN 9848 --- [compilador] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T07:56:57.777-06:00  INFO 9848 --- [compilador] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-22T07:56:57.802-06:00  INFO 9848 --- [compilador] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22T07:56:57.803-06:00  INFO 9848 --- [compilador] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-22T07:56:57.934-06:00  INFO 9848 --- [compilador] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22T07:56:57.935-06:00  INFO 9848 --- [compilador] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2340 ms
+2025-05-22T07:56:58.380-06:00  INFO 9848 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-parser' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T07:56:58.476-06:00  INFO 9848 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-lexer' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T07:56:58.514-06:00  INFO 9848 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-semantica' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T07:56:59.337-06:00  INFO 9848 --- [compilador] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22T07:56:59.382-06:00  WARN 9848 --- [compilador] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22T07:56:59.436-06:00  INFO 9848 --- [compilador] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22T07:56:59.617-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22T07:56:59.628-06:00  INFO 9848 --- [compilador] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T07:56:59.668-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T07:56:59.668-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T07:56:59.669-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T07:56:59.669-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T07:56:59.670-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T07:56:59.670-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22T07:56:59.671-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T07:57:00.351-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T07:57:00.356-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22T07:57:00.361-06:00  INFO 9848 --- [compilador] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22T07:57:00.371-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747922220369 with initial instances count: 1
+2025-05-22T07:57:00.374-06:00  INFO 9848 --- [compilador] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application COMPILADOR with eureka with status UP
+2025-05-22T07:57:00.376-06:00  INFO 9848 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747922220376, current=UP, previous=STARTING]
+2025-05-22T07:57:00.379-06:00  INFO 9848 --- [compilador] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPILADOR/LAPTOP-QD8DGEIF:compilador:8082: registering service...
+2025-05-22T07:57:00.413-06:00  INFO 9848 --- [compilador] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-05-22T07:57:00.414-06:00  INFO 9848 --- [compilador] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2025-05-22T07:57:00.436-06:00  INFO 9848 --- [compilador] [main] appCompilador.AppCompiladorApplication   : Started AppCompiladorApplication in 5.976 seconds (process running for 6.767)
+2025-05-22T07:57:00.458-06:00  INFO 9848 --- [compilador] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPILADOR/LAPTOP-QD8DGEIF:compilador:8082 - registration status: 204
+2025-05-22T08:01:59.675-06:00  INFO 9848 --- [compilador] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:02:26.004-06:00  INFO 9848 --- [compilador] [http-nio-8082-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22T08:02:26.050-06:00  INFO 9848 --- [compilador] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22T08:02:26.100-06:00  INFO 9848 --- [compilador] [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2025-05-22T08:04:44.771-06:00  INFO 27804 --- [compilador] [main] appCompilador.AppCompiladorApplication   : Starting AppCompiladorApplication using Java 22.0.2 with PID 27804 (C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppCompilador\target\classes started by HOLA in C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppCompilador)
+2025-05-22T08:04:44.777-06:00  INFO 27804 --- [compilador] [main] appCompilador.AppCompiladorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T08:04:47.529-06:00  INFO 27804 --- [compilador] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3099c522-77fa-3343-bdbb-9ca7c59e9da6
+2025-05-22T08:04:47.840-06:00  WARN 27804 --- [compilador] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-22T08:04:47.849-06:00  WARN 27804 --- [compilador] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T08:04:48.639-06:00  INFO 27804 --- [compilador] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-22T08:04:48.682-06:00  INFO 27804 --- [compilador] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22T08:04:48.683-06:00  INFO 27804 --- [compilador] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-22T08:04:48.909-06:00  INFO 27804 --- [compilador] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22T08:04:48.911-06:00  INFO 27804 --- [compilador] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3987 ms
+2025-05-22T08:04:49.567-06:00  INFO 27804 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-parser' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T08:04:49.716-06:00  INFO 27804 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-lexer' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T08:04:49.763-06:00  INFO 27804 --- [compilador] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'app-semantica' URL not provided. Will try picking an instance via load-balancing.
+2025-05-22T08:04:50.945-06:00  INFO 27804 --- [compilador] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22T08:04:51.027-06:00  WARN 27804 --- [compilador] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22T08:04:51.089-06:00  INFO 27804 --- [compilador] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22T08:04:51.360-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22T08:04:51.377-06:00  INFO 27804 --- [compilador] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:04:51.441-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T08:04:51.442-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T08:04:51.443-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T08:04:51.444-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T08:04:51.444-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T08:04:51.445-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22T08:04:51.445-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T08:04:52.284-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T08:04:52.289-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22T08:04:52.295-06:00  INFO 27804 --- [compilador] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22T08:04:52.310-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747922692308 with initial instances count: 0
+2025-05-22T08:04:52.314-06:00  INFO 27804 --- [compilador] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application COMPILADOR with eureka with status UP
+2025-05-22T08:04:52.316-06:00  INFO 27804 --- [compilador] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747922692316, current=UP, previous=STARTING]
+2025-05-22T08:04:52.321-06:00  INFO 27804 --- [compilador] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPILADOR/LAPTOP-QD8DGEIF:compilador:8082: registering service...
+2025-05-22T08:04:52.376-06:00  INFO 27804 --- [compilador] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2025-05-22T08:04:52.378-06:00  INFO 27804 --- [compilador] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2025-05-22T08:04:52.409-06:00  INFO 27804 --- [compilador] [main] appCompilador.AppCompiladorApplication   : Started AppCompiladorApplication in 9.463 seconds (process running for 10.927)
+2025-05-22T08:04:52.429-06:00  INFO 27804 --- [compilador] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPILADOR/LAPTOP-QD8DGEIF:compilador:8082 - registration status: 204
+2025-05-22T08:05:22.294-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T08:05:22.295-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T08:05:22.295-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T08:05:22.296-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T08:05:22.296-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T08:05:22.296-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-05-22T08:05:22.297-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T08:05:22.343-06:00  INFO 27804 --- [compilador] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T08:09:20.249-06:00  INFO 27804 --- [compilador] [http-nio-8082-exec-29] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22T08:09:20.291-06:00  INFO 27804 --- [compilador] [http-nio-8082-exec-29] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22T08:09:20.304-06:00  INFO 27804 --- [compilador] [http-nio-8082-exec-29] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-05-22T08:09:51.458-06:00  INFO 27804 --- [compilador] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:14:51.471-06:00  INFO 27804 --- [compilador] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:19:51.488-06:00  INFO 27804 --- [compilador] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:24:51.495-06:00  INFO 27804 --- [compilador] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:29:51.504-06:00  INFO 27804 --- [compilador] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

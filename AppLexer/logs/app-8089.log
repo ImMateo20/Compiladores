@@ -1,0 +1,42 @@
+2025-05-22T08:05:56.448-06:00  INFO 4432 --- [app-lexer] [main] appLexer.AppLexerAplication              : Starting AppLexerAplication using Java 22.0.2 with PID 4432 (C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppLexer\target\classes started by HOLA in C:\Users\HOLA\Desktop\Asig\Compiladores\2doParcial\CompiladorConEureka\CompiladorAPP\AppLexer)
+2025-05-22T08:05:56.453-06:00  INFO 4432 --- [app-lexer] [main] appLexer.AppLexerAplication              : No active profile set, falling back to 1 default profile: "default"
+2025-05-22T08:05:58.956-06:00  INFO 4432 --- [app-lexer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e9b5add-1b1f-33d6-a76b-047dfd003e87
+2025-05-22T08:05:59.113-06:00  WARN 4432 --- [app-lexer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-22T08:05:59.119-06:00  WARN 4432 --- [app-lexer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T08:05:59.666-06:00  INFO 4432 --- [app-lexer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-05-22T08:05:59.695-06:00  INFO 4432 --- [app-lexer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22T08:05:59.696-06:00  INFO 4432 --- [app-lexer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-22T08:05:59.831-06:00  INFO 4432 --- [app-lexer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22T08:05:59.832-06:00  INFO 4432 --- [app-lexer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3263 ms
+2025-05-22T08:06:01.411-06:00  INFO 4432 --- [app-lexer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22T08:06:01.501-06:00  WARN 4432 --- [app-lexer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22T08:06:01.520-06:00  INFO 4432 --- [app-lexer] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-05-22T08:06:01.635-06:00  INFO 4432 --- [app-lexer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22T08:06:01.829-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22T08:06:01.840-06:00  INFO 4432 --- [app-lexer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:06:01.883-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T08:06:01.884-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T08:06:01.884-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T08:06:01.885-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T08:06:01.885-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T08:06:01.885-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22T08:06:01.886-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T08:06:02.571-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T08:06:02.576-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22T08:06:02.591-06:00  INFO 4432 --- [app-lexer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22T08:06:02.602-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747922762600 with initial instances count: 7
+2025-05-22T08:06:02.605-06:00  INFO 4432 --- [app-lexer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APP-LEXER with eureka with status UP
+2025-05-22T08:06:02.607-06:00  INFO 4432 --- [app-lexer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747922762606, current=UP, previous=STARTING]
+2025-05-22T08:06:02.611-06:00  INFO 4432 --- [app-lexer] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-LEXER/LAPTOP-QD8DGEIF:app-lexer:8089: registering service...
+2025-05-22T08:06:02.655-06:00  INFO 4432 --- [app-lexer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path ''
+2025-05-22T08:06:02.657-06:00  INFO 4432 --- [app-lexer] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8089
+2025-05-22T08:06:02.698-06:00  INFO 4432 --- [app-lexer] [main] appLexer.AppLexerAplication              : Started AppLexerAplication in 7.684 seconds (process running for 8.826)
+2025-05-22T08:06:02.700-06:00  INFO 4432 --- [app-lexer] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-LEXER/LAPTOP-QD8DGEIF:app-lexer:8089 - registration status: 204
+2025-05-22T08:09:22.819-06:00  INFO 4432 --- [app-lexer] [http-nio-8089-exec-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22T08:09:22.847-06:00  INFO 4432 --- [app-lexer] [http-nio-8089-exec-15] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22T08:09:22.858-06:00  INFO 4432 --- [app-lexer] [http-nio-8089-exec-15] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-05-22T08:11:01.902-06:00  INFO 4432 --- [app-lexer] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:16:01.914-06:00  INFO 4432 --- [app-lexer] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:21:01.920-06:00  INFO 4432 --- [app-lexer] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:26:01.929-06:00  INFO 4432 --- [app-lexer] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T08:31:01.933-06:00  INFO 4432 --- [app-lexer] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

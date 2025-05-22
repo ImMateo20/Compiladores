@@ -1,0 +1,14 @@
+public class Main{
+public static void main(String [] args){
+int a = 5 + 2 + 4 / 2;
+int b = 3 + 10 + a;
+double c = a + b;
+String cadena= "Hola mundo";
+String resultadoC = "El resultado es: " + c;
+int cadena2 = "hola";
+int x = 2.5 + "hola";
+double y = "xxxx";
+a = "hola mudo";
+int a = 6;
+}
+}
